@@ -10,4 +10,5 @@ class Student extends Model
     /** @use HasFactory<\Database\Factories\StudentFactory> */
     use HasFactory;
     public $timestamps = false;
+    protected $fillable = ['name', 'email', 'age', 'city']; // Mass assignment
 }
